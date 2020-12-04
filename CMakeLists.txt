@@ -22,6 +22,7 @@ include(CheckCCompilerFlag)
 include(GNUInstallDirs)
 
 include_directories(${CMAKE_SOURCE_DIR})
+include_directories("/usr/include/harfbuzz")
 
 add_definitions(-DENABLE_NLS -DGETTEXT_PACKAGE="pcsxr")
 
