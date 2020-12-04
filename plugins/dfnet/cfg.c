@@ -11,6 +11,8 @@
 
 #include "dfnet.h"
 
+Config conf;
+
 #define CFG_FILENAME "dfnet.cfg"
 
 void SaveConf() {
