@@ -28,6 +28,9 @@
 #endif
 
 #if SDL_VERSION_ATLEAST(2,0,0)
+
+SDL_GameControllerButton controllerMap[DKEY_TOTAL];	
+
 int has_haptic;
 
 SDL_GameControllerButton controllerMap[] = {
