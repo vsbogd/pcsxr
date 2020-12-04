@@ -42,6 +42,9 @@
 
 #include <X11/extensions/XTest.h>
 
+char cfgfile[MAXPATHLEN];	/* adb comment this out - make a local var, or at least use gchar funcs */
+char cfgfile_basename[MAXPATHLEN];	/* adb comment this out - make a local var, or at least use gchar funcs */
+
 enum {
 	RUN = 0,
 	RUN_CD,
