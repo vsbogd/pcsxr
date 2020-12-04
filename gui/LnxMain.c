@@ -309,7 +309,7 @@ int main(int argc, char *argv[]) {
 
 			if (i+1 >= argc) break;
 			strncpy(isofilename, argv[++i], MAXPATHLEN);
-			isofilename[MAXPATHLEN] = '\0';
+			isofilename[MAXPATHLEN - 1] = '\0';
 			if (isofilename[0] != '/') {
 				getcwd(path, MAXPATHLEN);
 				if (strlen(path) + strlen(isofilename) + 1 < MAXPATHLEN) {
